@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+}
+@model List<My_first_Mvc_Program.My_DAta.Table_Emp>
+<table class="table table-sm">
+
+    <tr>
+
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Address</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.Email</td>
+            <td>@item.Address</td>
+
+
+        </tr>
+    }
+</table>
+@*<button type="button" class="btn btn-info">CLICK ME</button>*@
+<button class=button type="button" class="btn btn-info"top-0 end-0">Click me</button>
+
